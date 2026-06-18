@@ -1,7 +1,8 @@
 class NeuronsOpencodeBridge < Formula
   desc "Local OpenCode provider bridge for Reply Neurons"
   homepage "https://github.com/vanilla-reply/neurons-opencode-bridge"
-  url "git@github.com:vanilla-reply/neurons-opencode-bridge.git",
+  url "ssh://git@github.com/vanilla-reply/neurons-opencode-bridge.git",
+      using: GitDownloadStrategy,
       tag: "v0.1.1",
       revision: "004b1f56e33acf306cbea6b39131b2a4ccd87007"
   license "MIT"
