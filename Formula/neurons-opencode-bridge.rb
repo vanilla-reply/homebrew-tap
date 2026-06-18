@@ -1,14 +1,16 @@
 class NeuronsOpencodeBridge < Formula
   desc "Local OpenCode provider bridge for Reply Neurons"
   homepage "https://github.com/vanilla-reply/neurons-opencode-bridge"
-  url "https://github.com/vanilla-reply/neurons-opencode-bridge/releases/download/v0.1.1/neurons"
-  sha256 "3d0512a5899a887bb8e187c8661c0b71aa619bdfb902d636c9ea87883ed7b530"
+  url "git@github.com:vanilla-reply/neurons-opencode-bridge.git",
+      tag: "v0.1.1",
+      revision: "004b1f56e33acf306cbea6b39131b2a4ccd87007"
   license "MIT"
 
   depends_on "python@3.11"
 
   def install
-    bin.install "neurons"
+    libexec.install "neurons", "neurons_bridge"
+    bin.write_exec_script libexec/"neurons"
   end
 
   test do
