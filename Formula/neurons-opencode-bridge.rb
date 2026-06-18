@@ -3,8 +3,8 @@ class NeuronsOpencodeBridge < Formula
   homepage "https://github.com/vanilla-reply/neurons-opencode-bridge"
   url "ssh://git@github.com/vanilla-reply/neurons-opencode-bridge.git",
       using: GitDownloadStrategy,
-      tag: "v0.1.7",
-      revision: "750037adfa8e6796bcd500130586c6d490bbd46a"
+      tag: "v0.1.8",
+      revision: "4d249d3da66fdc3a48f03cff0a3490b8fab08024"
   license "MIT"
 
   depends_on "python@3.11"
