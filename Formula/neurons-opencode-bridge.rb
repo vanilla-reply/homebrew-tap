@@ -8,6 +8,7 @@ class NeuronsOpencodeBridge < Formula
   license "MIT"
 
   depends_on "python@3.11"
+  depends_on "opencode"
 
   def install
     libexec.install "neurons", "neurons_bridge"
@@ -22,7 +23,6 @@ class NeuronsOpencodeBridge < Formula
     <<~EOS
       Neurons OpenCode Bridge requires:
         - Google Chrome or Microsoft Edge
-        - opencode on PATH
         - an authenticated Reply Neurons account
 
       Start it in an OpenCode project with:
