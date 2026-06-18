@@ -4,7 +4,7 @@ class NeuronsOpencodeBridge < Formula
   url "ssh://git@github.com/vanilla-reply/neurons-opencode-bridge.git",
       using: GitDownloadStrategy,
       tag: "v0.1.2",
-      revision: "5aca578f1b6bcded936ee9d62490d2eefcb475ab"
+      revision: "3c7438c7c2b149e4e7bceb80e8059d0bcee2e1f9"
   license "MIT"
 
   depends_on "python@3.11"
